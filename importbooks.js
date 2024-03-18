@@ -9,7 +9,7 @@ let { data: Five_Books, error } = await supabase
   .from('Five_Books')
   .select('*')
 
-for (let My_Books of Five_Books) {
-    let mybookTable = document.getElementById('Five_Books_Title');
-    mybookTable.innerHTML += '<li>${My_Books.Title}</li>';
+for (let book of Five_Books) {
+    let mybookTable = document.getElementById('Five_Books');
+    mybookTable.innerHTML += '<li>${book.Title}</li>';
 }
