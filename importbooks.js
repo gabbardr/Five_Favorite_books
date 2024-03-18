@@ -9,5 +9,5 @@ let { data: Five_Books, error } = await supabase
 
 for (let My_Books of Five_Books) {
     let mybookTable = document.getElementById('Five_Books');
-    mybookTable.innerHTML = '<row>${My_Books.Title}</row>';
+    mybookTable.innerHTML = '<tr>${My_Books.Title} ${My_Books.Author}</tr>';
 }
