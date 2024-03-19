@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "https://cdn.skypack.dev/@supabase/supabase-js@2.7.1"
 
 const supabaseUrl = 'https://teymsckkkueaiccnmbma.supabase.co'
 const supabaseKey = 
