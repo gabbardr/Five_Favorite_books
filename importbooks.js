@@ -1,4 +1,4 @@
-import { createClient } from "https://cdn.skypack.dev/@supabase/supabase-js@2.7.1"
+import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = 'https://teymsckkkueaiccnmbma.supabase.co'
 const supabaseKey = 
@@ -11,5 +11,5 @@ let { data: Five_Books, error } = await supabase
 
 for (let book of Five_Books) {
     let mybookTable = document.getElementById('Five_Books');
-    mybookTable.innerHTML += '<li>${book.Title}</li>';
+    mybookTable.innerHTML += `<li>${book.Title}</li>`;
 }
